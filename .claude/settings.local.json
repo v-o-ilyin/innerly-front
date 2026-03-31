@@ -1,0 +1,10 @@
+{
+  "disabledMcpjsonServers": [
+    "shadcn"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "type": "stdio",
+      "command": "/usr/local/bin/npx",
+      "args": ["shadcn@latest", "mcp"]
+    }
+  }
+}
