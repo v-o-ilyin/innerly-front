@@ -9,7 +9,7 @@ EMAIL="ayhalrayz@gmail.com"   # <-- замени на свой email
 docker compose up -d web
 
 # Получить сертификат
-docker compose run --rm certbot certonly \
+docker compose run --rm --entrypoint certbot certbot certonly \
   --webroot \
   --webroot-path /var/www/certbot \
   --email "$EMAIL" \
