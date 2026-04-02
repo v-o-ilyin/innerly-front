@@ -3,32 +3,32 @@ import { Check, ArrowRight } from "lucide-react";
 
 const plans = [
   {
-    name: 'Месяц',
-    price: '799',
-    period: '/ месяц',
+    name: "Месяц",
+    price: "799",
+    period: "/ месяц",
     highlight: false,
     features: [
-      'Помощь в тревожных ситуациях прямо в моменте',
-      'Ежедневные советы под твою тему',
-      'Персональная обратная связь от ИИ',
-      'Медитации и упражнения для саморефлексии',
-      'Еженедельная аналитика твоего прогресса',
-      'Всё в Telegram, без лишних приложений',
+      "Помощь в тревожных ситуациях прямо в моменте",
+      "Ежедневные советы под твою тему",
+      "Персональная обратная связь от ИИ",
+      "Медитации и упражнения для саморефлексии",
+      "Еженедельная аналитика твоего прогресса",
+      "Всё в Telegram, без лишних приложений",
     ],
   },
   {
-    name: '3 месяца',
-    price: '1 999',
-    period: '/ 3 месяца',
-    badge: 'Выгоднее на 17%',
+    name: "3 месяца",
+    price: "1 999",
+    period: "/ 3 месяца",
+    badge: "Выгоднее на 17%",
     highlight: true,
     features: [
-      'Помощь в тревожных ситуациях прямо в моменте',
-      'Ежедневные советы под твою тему',
-      'Персональная обратная связь от ИИ',
-      'Медитации и упражнения для саморефлексии',
-      'Еженедельная аналитика твоего прогресса',
-      'Приоритетная поддержка',
+      "Помощь в тревожных ситуациях прямо в моменте",
+      "Ежедневные советы под твою тему",
+      "Персональная обратная связь от ИИ",
+      "Медитации и упражнения для саморефлексии",
+      "Еженедельная аналитика твоего прогресса",
+      "Приоритетная поддержка",
     ],
   },
 ];
@@ -50,7 +50,9 @@ export function Offer() {
           который помогает понять себя и не оставаться один на один с эмоциями
         </p>
         <p className="text-white/70 text-sm mb-10">
-          Первые <span className="text-white font-semibold">7 дней бесплатно</span> — без привязки карты
+          Первые{" "}
+          <span className="text-white font-semibold">2 дня бесплатно</span> —
+          без привязки карты
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -59,8 +61,8 @@ export function Offer() {
               key={plan.name}
               className={`relative rounded-2xl p-7 flex flex-col gap-6 border text-left ${
                 plan.highlight
-                  ? 'bg-white border-white shadow-2xl shadow-black/20'
-                  : 'bg-white/10 border-white/20'
+                  ? "bg-white border-white shadow-2xl shadow-black/20"
+                  : "bg-white/10 border-white/20"
               }`}
             >
               {plan.badge && (
@@ -70,14 +72,20 @@ export function Offer() {
               )}
 
               <div>
-                <p className={`text-sm font-semibold mb-2 ${plan.highlight ? 'text-violet-500' : 'text-violet-200'}`}>
+                <p
+                  className={`text-sm font-semibold mb-2 ${plan.highlight ? "text-violet-500" : "text-violet-200"}`}
+                >
                   {plan.name}
                 </p>
                 <div className="flex items-end gap-1">
-                  <span className={`text-4xl font-black ${plan.highlight ? 'text-violet-950' : 'text-white'}`}>
+                  <span
+                    className={`text-4xl font-black ${plan.highlight ? "text-violet-950" : "text-white"}`}
+                  >
                     {plan.price} ₽
                   </span>
-                  <span className={`text-sm mb-1 ${plan.highlight ? 'text-slate-400' : 'text-violet-300'}`}>
+                  <span
+                    className={`text-sm mb-1 ${plan.highlight ? "text-slate-400" : "text-violet-300"}`}
+                  >
                     {plan.period}
                   </span>
                 </div>
@@ -86,8 +94,16 @@ export function Offer() {
               <ul className="flex flex-col gap-2.5 flex-1">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.highlight ? 'text-violet-500' : 'text-violet-300'}`} />
-                    <span className={plan.highlight ? 'text-slate-600' : 'text-white/90'}>{f}</span>
+                    <Check
+                      className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.highlight ? "text-violet-500" : "text-violet-300"}`}
+                    />
+                    <span
+                      className={
+                        plan.highlight ? "text-slate-600" : "text-white/90"
+                      }
+                    >
+                      {f}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -96,8 +112,8 @@ export function Offer() {
                 size="lg"
                 className={
                   plan.highlight
-                    ? 'w-full bg-violet-600 text-white hover:bg-violet-700'
-                    : 'w-full bg-white text-violet-700 hover:bg-violet-50'
+                    ? "w-full bg-violet-600 text-white hover:bg-violet-700"
+                    : "w-full bg-white text-violet-700 hover:bg-violet-50"
                 }
                 asChild
               >
