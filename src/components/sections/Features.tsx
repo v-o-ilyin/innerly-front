@@ -44,7 +44,7 @@ export function Features() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((f) => {
             const Icon = f.icon
             return (
@@ -71,48 +71,6 @@ export function Features() {
               </div>
             )
           })}
-        </div>
-
-        {/* Phone demo row */}
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-violet-500 uppercase tracking-widest">
-            Скриншоты
-          </span>
-          <h3 className="text-2xl font-bold text-violet-950 mt-2">
-            Как выглядит изнутри
-          </h3>
-        </div>
-        <div className="flex flex-wrap justify-center gap-6">
-          {[
-            { label: 'Помощь в моменте', bg: 'from-violet-600 to-indigo-600', msgs: ['Что ты сейчас чувствуешь?', 'Тревога', 'Давай попробуем технику заземления...'] },
-            { label: 'Запись ситуации', bg: 'from-rose-500 to-pink-600', msgs: ['Расскажи, что произошло?', 'Поспорила с подругой', 'Какие эмоции ты заметила?'] },
-            { label: 'Еженедельная сводка', bg: 'from-emerald-500 to-teal-600', msgs: ['📊 Итоги недели', '7 записей сделано', 'Тревога ↓ 30% по сравнению с прошлой неделей'] },
-          ].map((screen) => (
-            <div key={screen.label} className="flex flex-col items-center gap-3">
-              <div className="w-44 h-80 bg-gradient-to-b from-slate-900 to-slate-950 rounded-[30px] shadow-xl p-2">
-                <div className="w-full h-full bg-white rounded-[24px] overflow-hidden flex flex-col">
-                  <div className={`bg-gradient-to-r ${screen.bg} px-3 pt-2 pb-3`}>
-                    <p className="text-white text-[10px] font-semibold">{screen.label}</p>
-                  </div>
-                  <div className="flex-1 bg-[#f0ece8] p-2 flex flex-col gap-2">
-                    {screen.msgs.map((m, i) => (
-                      <div
-                        key={m}
-                        className={`rounded-xl px-2 py-1.5 text-[9px] leading-snug max-w-[85%] ${
-                          i % 2 === 0
-                            ? 'bg-white text-slate-700 shadow-sm'
-                            : 'ml-auto bg-violet-600 text-white'
-                        }`}
-                      >
-                        {m}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <p className="text-xs text-slate-500 font-medium">{screen.label}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

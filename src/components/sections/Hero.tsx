@@ -7,19 +7,16 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl lg:text-6xl font-bold text-violet-950 leading-tight mb-6">
-              Дневник, который{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-rose-500">
-                понимает тебя
+            <h1 className="text-4xl lg:text-6xl font-bold text-violet-950 leading-none mb-6">
+              Разгрузи голову и разберись с{' '}
+              <span className="text-shimmer">
+                эмоциями
               </span>
+              {' '}за 5 минут в день
             </h1>
-            <p className="text-lg text-slate-600 mb-4 max-w-xl">
-              Справляйся с тревогой и стрессом прямо в моменте. Веди дневник,
-              получай обратную связь от ИИ и отслеживай своё эмоциональное
-              состояние
-            </p>
-            <p className="text-sm text-slate-400 mb-8">
-              Для тех, кто хочет лучше понимать себя и справляться с эмоциями
+            <p className="text-lg text-slate-600 mb-8 max-w-xl">
+              ИИ-дневник в Telegram, который помогает понять себя, справиться с
+              тревогой и стрессом — прямо в моменте
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button size="lg" asChild>
