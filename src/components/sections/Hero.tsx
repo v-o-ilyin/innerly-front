@@ -7,16 +7,12 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl lg:text-6xl font-bold text-violet-950 leading-none mb-6">
-              Разгрузи голову и разберись с{' '}
-              <span className="text-shimmer">
-                эмоциями
-              </span>
-              {' '}за 5 минут в день
+            <h1 className="text-4xl lg:text-5xl font-bold text-violet-950 leading-tight mb-4">
+              ИИ-дневник в Telegram, который помогает понять себя, справиться с{' '}
+              <span className="text-shimmer">тревогой</span> и стрессом
             </h1>
-            <p className="text-lg text-slate-600 mb-8 max-w-xl">
-              ИИ-дневник в Telegram, который помогает понять себя, справиться с
-              тревогой и стрессом — прямо в моменте
+            <p className="text-xl text-slate-600 mb-8 max-w-xl font-medium">
+              Разгрузи голову и разберись с эмоциями за 5 минут в день
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button size="lg" asChild>

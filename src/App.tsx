@@ -5,6 +5,7 @@ import { HowItWorks } from '@/components/sections/HowItWorks'
 import { Topics } from '@/components/sections/Topics'
 import { Features } from '@/components/sections/Features'
 import { Offer } from '@/components/sections/Offer'
+import { CTA } from '@/components/sections/CTA'
 import { Footer } from '@/components/sections/Footer'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Topics />
         <Features />
         <Offer />
+        <CTA />
       </main>
       <Footer />
     </>
