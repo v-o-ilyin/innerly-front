@@ -6,6 +6,7 @@ const plans = [
     name: "Месяц",
     price: "799",
     period: "/ месяц",
+    goal: "Offer-1",
     highlight: false,
     features: [
       "Помощь в тревожных ситуациях прямо в моменте",
@@ -21,6 +22,7 @@ const plans = [
     price: "1 999",
     period: "/ 3 месяца",
     badge: "Выгоднее на 17%",
+    goal: "Offer-2",
     highlight: true,
     features: [
       "Помощь в тревожных ситуациях прямо в моменте",
@@ -117,7 +119,7 @@ export function Offer() {
                 }
                 asChild
               >
-                <a href="https://t.me/" target="_blank" rel="noreferrer">
+                <a href="https://t.me/innerly_helper_bot" target="_blank" rel="noreferrer" onClick={() => ym(108444641, 'reachGoal', plan.goal)}>
                   Попробовать бесплатно
                   <ArrowRight className="w-4 h-4" />
                 </a>

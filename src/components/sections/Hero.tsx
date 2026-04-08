@@ -16,7 +16,7 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button size="lg" asChild>
-                <a href="https://t.me/" target="_blank" rel="noreferrer">
+                <a href="https://t.me/innerly_helper_bot" target="_blank" rel="noreferrer" onClick={() => ym(108444641, 'reachGoal', 'heroButton')}>
                   Начать в Telegram
                   <ArrowRight className="w-5 h-5" />
                 </a>

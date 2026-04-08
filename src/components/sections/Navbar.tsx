@@ -11,7 +11,7 @@ export function Navbar() {
           <span className="font-bold text-violet-900 text-lg">Innerly</span>
         </div>
         <Button size="sm" asChild>
-          <a href="https://t.me/" target="_blank" rel="noreferrer">
+          <a href="https://t.me/innerly_helper_bot" target="_blank" rel="noreferrer" onClick={() => ym(108444641, 'reachGoal', 'menu-button')}>
             Попробовать бесплатно
           </a>
         </Button>
