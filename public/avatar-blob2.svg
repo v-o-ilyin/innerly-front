@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="blobBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c5ce8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100" height="100" rx="22" fill="white"/>
+
+  <!-- Thin outline blob (slightly larger, offset) -->
+  <path d="M50 20
+    C64 16 84 22 88 38
+    C92 52 84 66 68 72
+    C52 78 28 74 16 62
+    C4 50 8 30 22 24
+    C30 20 40 22 50 20Z"
+    fill="none" stroke="#a78bfa" stroke-width="1.3" opacity="0.55"
+    transform="translate(1, 2)"/>
+
+  <!-- Shadow blob (darker, shifted down-right) -->
+  <path d="M52 32
+    C64 28 80 32 84 46
+    C88 58 80 70 64 74
+    C48 78 28 72 18 60
+    C8 48 14 32 28 28
+    C36 25 44 34 52 32Z"
+    fill="url(#blobBack)" transform="translate(2, 5)"/>
+
+  <!-- Main blob (wide horizontal) -->
+  <path d="M50 28
+    C64 24 82 30 86 44
+    C90 58 80 70 64 74
+    C48 78 26 72 16 60
+    C6 48 12 32 26 28
+    C34 25 40 30 50 28Z"
+    fill="url(#blobGrad)"/>
+
+  <!-- Sparkle top-left -->
+  <path d="M16 22 L17 18 L18 22 L22 23 L18 24 L17 28 L16 24 L12 23Z" fill="#a78bfa"/>
+
+  <!-- Sparkle top-right -->
+  <path d="M78 18 L79 15 L80 18 L83 19 L80 20 L79 23 L78 20 L75 19Z" fill="#fda4af"/>
+
+  <!-- Sparkle bottom-right -->
+  <path d="M82 72 L83 69 L84 72 L87 73 L84 74 L83 77 L82 74 L79 73Z" fill="#a78bfa"/>
+
+  <!-- Small dot sparkles bottom-left -->
+  <path d="M14 74 L14.8 71.5 L15.6 74 L18 74.8 L15.6 75.6 L14.8 78 L14 75.6 L11.5 74.8Z" fill="#fb7185"/>
+</svg>

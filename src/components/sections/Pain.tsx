@@ -23,13 +23,13 @@ const pains = [
 
 export function Pain() {
   return (
-    <section className="py-20 px-6 bg-rose-50">
+    <section className="py-20 px-6 bg-amber-50">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-violet-950 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
             Тебе знакомо это?
           </h2>
-          <p className="text-slate-500 max-w-lg mx-auto">
+          <p className="text-stone-500 max-w-lg mx-auto">
             Большинство из нас не знают, как справляться с эмоциями прямо в
             моменте. И это нормально — просто раньше не было нужного инструмента
           </p>
@@ -38,12 +38,12 @@ export function Pain() {
           {pains.map((p) => (
             <div
               key={p.title}
-              className="bg-white rounded-2xl p-6 flex gap-4 shadow-sm border border-rose-100"
+              className="bg-white rounded-2xl p-6 flex gap-4 shadow-sm border border-brand-100"
             >
               <span className="text-3xl flex-shrink-0">{p.emoji}</span>
               <div>
-                <h3 className="font-semibold text-violet-900 mb-1">{p.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{p.desc}</p>
+                <h3 className="font-semibold text-brand-900 mb-1">{p.title}</h3>
+                <p className="text-sm text-stone-500 leading-relaxed">{p.desc}</p>
               </div>
             </div>
           ))}

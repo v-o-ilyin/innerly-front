@@ -111,7 +111,7 @@ export function Pricing() {
                     : ""
                 }
               >
-                <a href="https://t.me/innerly_helper_bot" target="_blank" rel="noreferrer">
+                <a href="https://t.me/innerly_ai_bot" target="_blank" rel="noreferrer">
                   Попробовать бесплатно
                 </a>
               </Button>

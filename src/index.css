@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-50: #fff6ef;
+  --color-brand-100: #ffe8d1;
+  --color-brand-200: #fecfa3;
+  --color-brand-300: #fdaf6a;
+  --color-brand-400: #f98430;
+  --color-brand-500: #d96820;
+  --color-brand-600: #b85315;
+  --color-brand-700: #96400e;
+  --color-brand-800: #73300c;
+  --color-brand-900: #4a1e07;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -8,19 +21,19 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 262 83% 58%;
+    --primary: 27 73% 49%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 340 82% 76%;
-    --accent-foreground: 240 5.9% 10%;
+    --secondary: 43 96% 90%;
+    --secondary-foreground: 25 60% 20%;
+    --muted: 40 20% 95%;
+    --muted-foreground: 25 15% 46%;
+    --accent: 47 96% 68%;
+    --accent-foreground: 25 60% 20%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 262 83% 58%;
+    --border: 30 30% 88%;
+    --input: 30 30% 88%;
+    --ring: 27 73% 49%;
     --radius: 0.75rem;
   }
 }
@@ -32,7 +45,7 @@
 }
 
 .text-shimmer {
-  background: linear-gradient(90deg, #7c3aed, #ec4899, #f97316, #7c3aed);
+  background: linear-gradient(90deg, #d96820, #e8a030, #f5c842, #d96820);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;

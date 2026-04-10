@@ -37,9 +37,9 @@ const plans = [
 
 export function Offer() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-br from-violet-600 via-violet-700 to-indigo-800">
+    <section className="py-24 px-6 bg-gradient-to-br from-brand-500 via-brand-600 to-amber-700">
       <div className="max-w-3xl mx-auto text-center">
-        <span className="inline-block text-violet-200 text-sm font-semibold uppercase tracking-widest mb-4">
+        <span className="inline-block text-brand-100 text-sm font-semibold uppercase tracking-widest mb-4">
           Начни прямо сейчас
         </span>
         <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4 leading-tight">
@@ -47,7 +47,7 @@ export function Offer() {
           <br />
           важнее, чем ты думаешь
         </h2>
-        <p className="text-violet-200 mb-4 max-w-xl mx-auto">
+        <p className="text-brand-100 mb-4 max-w-xl mx-auto">
           Innerly — это не замена психологу. Это дневник с живым откликом,
           который помогает понять себя и не оставаться один на один с эмоциями
         </p>
@@ -68,25 +68,25 @@ export function Offer() {
               }`}
             >
               {plan.badge && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
                   {plan.badge}
                 </span>
               )}
 
               <div>
                 <p
-                  className={`text-sm font-semibold mb-2 ${plan.highlight ? "text-violet-500" : "text-violet-200"}`}
+                  className={`text-sm font-semibold mb-2 ${plan.highlight ? "text-brand-500" : "text-brand-200"}`}
                 >
                   {plan.name}
                 </p>
                 <div className="flex items-end gap-1">
                   <span
-                    className={`text-4xl font-black ${plan.highlight ? "text-violet-950" : "text-white"}`}
+                    className={`text-4xl font-black ${plan.highlight ? "text-stone-900" : "text-white"}`}
                   >
                     {plan.price} ₽
                   </span>
                   <span
-                    className={`text-sm mb-1 ${plan.highlight ? "text-slate-400" : "text-violet-300"}`}
+                    className={`text-sm mb-1 ${plan.highlight ? "text-stone-400" : "text-brand-200"}`}
                   >
                     {plan.period}
                   </span>
@@ -97,11 +97,11 @@ export function Offer() {
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm">
                     <Check
-                      className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.highlight ? "text-violet-500" : "text-violet-300"}`}
+                      className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.highlight ? "text-brand-500" : "text-brand-200"}`}
                     />
                     <span
                       className={
-                        plan.highlight ? "text-slate-600" : "text-white/90"
+                        plan.highlight ? "text-stone-600" : "text-white/90"
                       }
                     >
                       {f}
@@ -114,12 +114,12 @@ export function Offer() {
                 size="lg"
                 className={
                   plan.highlight
-                    ? "w-full bg-violet-600 text-white hover:bg-violet-700"
-                    : "w-full bg-white text-violet-700 hover:bg-violet-50"
+                    ? "w-full bg-brand-500 text-white hover:bg-brand-600"
+                    : "w-full bg-white text-brand-700 hover:bg-brand-50"
                 }
                 asChild
               >
-                <a href="https://t.me/innerly_helper_bot" target="_blank" rel="noreferrer" onClick={() => ym(108444641, 'reachGoal', plan.goal)}>
+                <a href="https://t.me/innerly_ai_bot" target="_blank" rel="noreferrer" onClick={() => ym(108444641, 'reachGoal', plan.goal)}>
                   Попробовать бесплатно
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -128,7 +128,7 @@ export function Offer() {
           ))}
         </div>
 
-        <p className="text-violet-300/70 text-xs mt-8">
+        <p className="text-brand-200/70 text-xs mt-8">
           После триала — выбери удобный тариф. Никаких скрытых платежей
         </p>
       </div>

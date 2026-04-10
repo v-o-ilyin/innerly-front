@@ -1,21 +1,21 @@
 const topics = [
-  { emoji: '😮‍💨', label: 'Тревожность', color: 'bg-violet-100 border-violet-200 text-violet-800' },
-  { emoji: '🔥', label: 'Стресс', color: 'bg-orange-100 border-orange-200 text-orange-800' },
+  { emoji: '😮‍💨', label: 'Тревожность', color: 'bg-brand-100 border-brand-200 text-brand-800' },
+  { emoji: '🔥', label: 'Стресс', color: 'bg-amber-100 border-amber-200 text-amber-800' },
   { emoji: '💛', label: 'Самооценка', color: 'bg-yellow-100 border-yellow-200 text-yellow-800' },
-  { emoji: '⚡', label: 'Продуктивность', color: 'bg-emerald-100 border-emerald-200 text-emerald-800' },
+  { emoji: '⚡', label: 'Продуктивность', color: 'bg-stone-100 border-stone-200 text-stone-800' },
 ]
 
 export function Topics() {
   return (
-    <section className="py-16 px-6 bg-violet-50">
+    <section className="py-16 px-6 bg-amber-50">
       <div className="max-w-4xl mx-auto text-center">
-        <span className="text-sm font-semibold text-violet-500 uppercase tracking-widest">
+        <span className="text-sm font-semibold text-brand-500 uppercase tracking-widest">
           Темы работы
         </span>
-        <h2 className="text-3xl font-bold text-violet-950 mt-2 mb-4">
+        <h2 className="text-3xl font-bold text-stone-900 mt-2 mb-4">
           Выбери, над чем работать
         </h2>
-        <p className="text-slate-500 mb-10 max-w-md mx-auto">
+        <p className="text-stone-500 mb-10 max-w-md mx-auto">
           В зависимости от темы бот адаптирует утренние советы, вечерние
           вопросы и упражнения именно для тебя
         </p>
