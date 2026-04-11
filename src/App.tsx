@@ -3,6 +3,7 @@ import { Navbar } from '@/components/sections/Navbar'
 import { Hero } from '@/components/sections/Hero'
 import { Pain } from '@/components/sections/Pain'
 import { HowItWorks } from '@/components/sections/HowItWorks'
+import { Examples } from '@/components/sections/Examples'
 import { Topics } from '@/components/sections/Topics'
 import { Features } from '@/components/sections/Features'
 import { Offer } from '@/components/sections/Offer'
@@ -45,6 +46,7 @@ function App() {
         <Hero />
         <div ref={painRef}><Pain /></div>
         <div ref={howItWorksRef}><HowItWorks /></div>
+        <Examples />
         <div ref={topicsRef}><Topics /></div>
         <div ref={featuresRef}><Features /></div>
         <div ref={offerRef}><Offer /></div>
